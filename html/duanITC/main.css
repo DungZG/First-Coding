@@ -39,11 +39,11 @@
     position: absolute;
     top: 70px;
     left: 125px;
-    width: 360px;
+    width: 460px;
     height: 100%;
     background-size: 100%;
     content: '';
-    background-image: url('./assets/img/doanthanhnien.jpg');
+    background-image: url('./assets/img/tu-vung-ve-chu-de-music-1024x961.png');
     background-repeat: no-repeat;
 }
 
@@ -56,18 +56,39 @@
 }
 
 .icon-text{
+    align-items: center;
+    position: relative;
+    min-width: 20px;
     padding: 5px;
     margin-top: 20px;
     margin-bottom: 10px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3,2fr) ;
+}
+.icon1{
+    align-items: center;
+    margin: 10px;
+    top: 35%;
+    left: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+.icon2{
+    align-items: center;
+    margin: 10px;
+    top: 35%;
+    left: 50%;
+    transform: translateY(-50%);
+    position: relative;
 }
 
 .customi1{
-    padding: 15px;
-    display: inline-block;
-    border: #94C347 dashed 3px;
+    font-size: 28px;
+    border: #ccc 2px dashed;
     border-radius: 50%;
+    padding: 10px;
+    color: rgb(11, 180, 247);
+    display: inline-block;
 }
 
 .pick2{
@@ -355,6 +376,7 @@
 
 .containerkh .cardkh .iconkh img{
     max-width: 250px;
+    height: 170px;
 }
 
 .containerkh .cardkh .contentkh{
@@ -394,6 +416,7 @@
 }
 
 .containerkh .cardkh .morekh{
+    text-decoration: none;
     position: relative;
     padding: 10px 15px;
     background-color: #17e78c;
@@ -418,97 +441,4 @@
 
 .containerkh .cardkh.active .morekh::before{
     content: 'Read Less';
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
-#hoatdong-new{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #1D212B;
-}
-
-.slider-img{
-    position: relative;
-    width: 1200px;
-    height: 700px;
-    margin: 5px;
-    background: #1D212B;
-}
-
-.slider-img .sliderhoatdong{
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    clip-path: circle(0% at 0 50%);
-}
-
-.slider-img .sliderhoatdong.active{
-    clip-path: circle(150% at 0 50%);
-    transition: 2s;
-    transition-property: clip-path;
-}
-
-.slider-img .sliderhoatdong img{
-    z-index: 1;
-    width: 100%;
-    max-height: 1200px ;
-    border-radius: 5px;
-}
-
-.slider-img .sliderhoatdong .Info-hoatdong{
-    position: absolute;
-    top: 0;
-    padding: 15px 30px;
-}
-
-.slider-img .sliderhoatdong .Info-hoatdong h2{
-    color: #fff;
-    font-size: 45px;
-    text-transform: uppercase;
-    font-weight: 800px;
-    letter-spacing: 2px;
-}
-
-.slider-img .sliderhoatdong .Info-hoatdong p{
-    color: #fff;
-    background: rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    width: 60%;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.slider-img .navigation-hoatdong {
-    z-index: 2;
-    position: absolute;
-    display: flex;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.slider-img .navigation-hoatdong .btnhoatdong{
-    background: rgba(255, 255, 255, 0.5);
-    width: 12px;
-    height: 12px;
-    margin: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.slider-img .navigation-hoatdong .btnhoatdong.active{
-    background: #2696E9;
-    box-shadow:  0 0 2px rgba(0, 0, 0, 0. 0.5);
-}
-
-
-.isliderx{
-    position: relative;
-    /* display: grid;
-    align-items: center;
-    grid-template-columns: repeat(4,1fr); */
-    /* grid-gap: 20px; */
 }
